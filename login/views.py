@@ -12,7 +12,7 @@ class IndexView(View):
 
 class LoginView(View):
     def get(self, request):
-        return  render(request, 'index.html')
+        return render(request, 'login/index.html')
 
-    def post(self,request):
-        return JsonResponse(request.Post, json_dumps_params={'indent': 4})
+    def post(self, request):
+        return JsonResponse(request.POST, json_dumps_params={'indent': 4})
