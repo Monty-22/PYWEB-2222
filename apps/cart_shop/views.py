@@ -1,8 +1,7 @@
 from django.shortcuts import get_object_or_404, redirect
 from django.shortcuts import render
 from django.views import View
-from  .models import CartItemShop
-from ..cart_shop.models import CartItemShop, Cart, Product
+from .models import CartItemShop, Cart, Product
 
 
 class ViewCart(View):
@@ -26,6 +25,9 @@ class ViewCart(View):
 class ViewWishlist(View):
     def get(self, request):
         return render(request, 'cart_shop/wishlist.html')
+
+
+
 
 class ViewCartDel(View):
    def get(self, request, item_id):
