@@ -23,11 +23,7 @@ urlpatterns = [
     path('other/cart/', include('apps.cart.urls')),
     path('', include('apps.home.urls')),
     path('cart/', include('apps.cart_shop.urls')),
-    path('cart_shop/', include('apps.cart_shop.urls')),
     path('shop/', include('apps.shop.urls')),
     path('checkout/', include('apps.checkout.urls')),
     path('blog/', include('apps.blog.urls')),
-    path('login/', include('apps.auth_shop.urls')),
-   # path('checkout/index.html', include('apps.project.urls'))
-
 ]
